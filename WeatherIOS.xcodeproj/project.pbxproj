@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E86B8EE52B3DC68300213A79 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B8EE42B3DC68300213A79 /* Shapes.swift */; };
 		E8F3EDA12B39847300BBB851 /* WeatherIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F3EDA02B39847300BBB851 /* WeatherIOSApp.swift */; };
 		E8F3EDA32B39847300BBB851 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F3EDA22B39847300BBB851 /* ContentView.swift */; };
 		E8F3EDA52B39847400BBB851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F3EDA42B39847400BBB851 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E86B8EE42B3DC68300213A79 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		E8F3ED9D2B39847300BBB851 /* WeatherIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F3EDA02B39847300BBB851 /* WeatherIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIOSApp.swift; sourceTree = "<group>"; };
 		E8F3EDA22B39847300BBB851 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				E8F3EDB52B3986D600BBB851 /* Extencions.swift */,
+				E86B8EE42B3DC68300213A79 /* Shapes.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				E8F3EDB62B3986D600BBB851 /* Extencions.swift in Sources */,
 				E8F3EDA12B39847300BBB851 /* WeatherIOSApp.swift in Sources */,
 				E8F3EDBA2B39927C00BBB851 /* TabBar.swift in Sources */,
+				E86B8EE52B3DC68300213A79 /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
