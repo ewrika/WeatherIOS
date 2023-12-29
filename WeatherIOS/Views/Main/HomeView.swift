@@ -6,8 +6,17 @@
 //
 
 import SwiftUI
+import BottomSheet
+
+enum BottomSheetPosition : CGFloat , CaseIterable {
+    
+    case middle = 0.385 // 325/844
+    case top = 0.83 //702/844
+}
+
 
 struct HomeView: View {
+    @State var bottomSheetPosition: BottomSheetPosition = .middle
     var body: some View {
         NavigationView {
             ZStack{
@@ -32,7 +41,11 @@ struct HomeView: View {
                     Spacer()
                 }
                 .padding(.top,51)
-                
+                BottomSheetView(position: $bottomSheetPosition){
+               //     Text(bottomSheetPosition.rawValue.formatted())
+                }content:{
+                    ForecastView()
+                }
                 TabBar(action: {})
             }
             .navigationBarHidden(true)
