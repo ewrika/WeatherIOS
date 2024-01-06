@@ -7,9 +7,29 @@
 
 import SwiftUI
 
+class UIBackdropView:UIView{
+    override class var layerClass: AnyClass {
+        NSClassFromString("CABackdroplayer") ?? CALayer.self
+    }
+}
+
+struct Backdrop:UIViewRepresentable{
+    func makeUIView(context: Context) -> UIBackdropView {
+        UIBackdropView()
+    }
+    
+    func updateUIView(_ uiView: UIBackdropView, context: Context) {
+        
+    }
+}
+
 struct Blur: View {
+    var radius : CGFloat = 3
+    var opaque : Bool = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Backdrop()
+            .blur(radius: radius ,opaque: opaque)
     }
 }
 
